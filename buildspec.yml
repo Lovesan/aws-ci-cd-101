@@ -11,9 +11,9 @@ env:
 phases:
   build:
     commands:
-      - '& nuget restore $env:SOLUTION -PackagesDirectory $env:PACKAGE_DIRECTORY'
-      - '& msbuild /p:Configuration=Release -p:FrameworkPathOverride="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v$env:DOTNET_FRAMEWORK" $env:SOLUTION'
-      - '& vstest.console "${env:TEST_DLL}"'
+      - 'nuget restore'
+      - 'msbuild /p:Configuration=Release'
+      - 'vstest.console "${env:TEST_DLL}"'
 artifacts:
   files:
     - .\src\AwsCICD101\bin\Release\*
