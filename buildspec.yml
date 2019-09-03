@@ -6,13 +6,16 @@ env:
     PACKAGE_DIRECTORY: .\packages
     DOTNET_FRAMEWORK: 4.8
     TEST_DLL: .\test\AwsCICD101.Test\bin\Release\AwsCICD101.Test.dll
-    VSTEST_EXE: .\packages\Microsoft.TestPlatform.16.2.0\tools\net451\Common7\IDE\Extensions\TestPlatform\vstest.console.exe
 
 phases:
-  build:
+  pre_build:
     commands:
       - 'nuget restore'
+  build:
+    commands:
       - 'msbuild /p:Configuration=Release'
+  post_build:
+    commands:
       - 'vstest.console "${env:TEST_DLL}"'
 artifacts:
   files:
