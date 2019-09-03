@@ -20,3 +20,6 @@ phases:
 artifacts:
   files:
     - .\src\AwsCICD101\bin\Release\*
+    - .\appspec.yml
+  discard-paths: yes
+
