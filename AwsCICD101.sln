@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsCICD101", "src\AwsCICD101\AwsCICD101.csproj", "{23E8D415-4794-4265-89A2-4D8AFD6C728D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{76308D31-2430-48C5-8698-C5D680151A40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{67E8AABD-EB6D-4EC1-9BF1-6AFA7EF12C1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsCICD101.Test", "test\AwsCICD101.Test\AwsCICD101.Test.csproj", "{ADB392C3-8318-4964-B7BD-FAA02DD9421B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{790DF3ED-734D-47A3-9F04-2F27A71D1255}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		buildspec.yml = buildspec.yml
+		COPYRIGHT = COPYRIGHT
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23E8D415-4794-4265-89A2-4D8AFD6C728D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E8D415-4794-4265-89A2-4D8AFD6C728D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E8D415-4794-4265-89A2-4D8AFD6C728D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E8D415-4794-4265-89A2-4D8AFD6C728D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB392C3-8318-4964-B7BD-FAA02DD9421B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB392C3-8318-4964-B7BD-FAA02DD9421B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB392C3-8318-4964-B7BD-FAA02DD9421B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB392C3-8318-4964-B7BD-FAA02DD9421B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23E8D415-4794-4265-89A2-4D8AFD6C728D} = {76308D31-2430-48C5-8698-C5D680151A40}
+		{ADB392C3-8318-4964-B7BD-FAA02DD9421B} = {67E8AABD-EB6D-4EC1-9BF1-6AFA7EF12C1F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B26A2994-7216-476F-A0B8-340471DE17E5}
+	EndGlobalSection
+EndGlobal
