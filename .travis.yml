@@ -1,3 +1,9 @@
 language: csharp
-os: windows
+matrix:
+  include:
+    - name: "Windows"
+      os: windows
+      language: csharp
 script: msbuild /p:Configuration=Release
+notifications:
+  email: false
