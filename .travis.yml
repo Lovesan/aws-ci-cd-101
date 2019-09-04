@@ -1,0 +1,3 @@
+language: csharp
+os: windows
+script: msbuild /p:Configuration=Release
