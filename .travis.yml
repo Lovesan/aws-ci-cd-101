@@ -4,6 +4,6 @@ matrix:
     - name: "Windows"
       os: windows
       language: shell
-script: cmd.exe /C '"C:/Program Files (x86)/MSBuild/14.0/Bin/msbuild.exe" /p:Configuration=Release'
+script: 'C:/Program Files (x86)/MSBuild/14.0/Bin/msbuild.exe' /p:Configuration=Release
 notifications:
   email: false
