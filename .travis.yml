@@ -3,7 +3,7 @@ matrix:
   include:
     - name: "Windows"
       os: windows
-      language: csharp
+      language: shell
 script: msbuild /p:Configuration=Release
 notifications:
   email: false
