@@ -4,7 +4,6 @@ matrix:
     - name: "Windows"
       os: windows
       language: shell
-      env: PATH="/c/Program Files (x86)/MSBuild/14.0/Bin:$PATH"
-script: msbuild /p:Configuration=Release'
+script: powershell.exe -NonInteractive Build.ps1
 notifications:
   email: false
