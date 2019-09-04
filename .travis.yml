@@ -4,6 +4,6 @@ matrix:
     - name: "Windows"
       os: windows
       language: shell
-script: powershell.exe -NonInteractive -File Build.ps1
+script: powershell.exe -ExecutionPolicy Bypass -NonInteractive -File Build.ps1
 notifications:
   email: false
