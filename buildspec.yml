@@ -17,7 +17,7 @@ phases:
   post_build:
     commands:
       - 'vstest.console "${env:TEST_DLL}"'
-      - 'msbuild /p:Configuration=Release /t:Publish .\src\AwsCICD101.Web\AwsCICD101.Web.csproj'
+      - 'msbuild /p:Configuration=Release /t:Package .\src\AwsCICD101.Web\AwsCICD101.Web.csproj'
       - 'Copy-Item -Recurse -Force .\src\AwsCICD101.Web\obj\Release\Package\PackageTmp .\publish'
 artifacts:
   files:
