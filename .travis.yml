@@ -1,9 +1,0 @@
-language: csharp
-matrix:
-  include:
-    - name: "Windows"
-      os: windows
-      language: shell
-script: powershell.exe -ExecutionPolicy Bypass -NonInteractive -File Build.ps1
-notifications:
-  email: false
