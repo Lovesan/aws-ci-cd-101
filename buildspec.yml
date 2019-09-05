@@ -21,6 +21,6 @@ phases:
       - 'Copy-Item -Recurse -Force .\src\AwsCICD101.Web\obj\Release\Package\PackageTmp .\publish'
 artifacts:
   files:
-    - .\publish\*
+    - .\publish\**\*
     - .\appspec.yml
 
