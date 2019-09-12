@@ -22,5 +22,6 @@ phases:
 artifacts:
   files:
     - .\publish\**\*
+    - .\scripts\**\*
     - .\appspec.yml
 

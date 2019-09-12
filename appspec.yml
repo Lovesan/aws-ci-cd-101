@@ -2,4 +2,13 @@ version: 0.0
 os: windows
 files:
   - source: /publish
-    destination: C:/aws-ci-cd-101
+    destination: C:/aws-ci-cd-101    
+hooks:
+  ApplicationStop:
+    - location: scripts/ApplicationStop.ps1
+  BeforeInstall:
+    - location: scripts/BeforeInstall.ps1
+  AfterInstall:
+    - location: scripts/AfterInstall.ps1
+  ApplicationStart:
+    - location: scripts/ApplicationStart.ps1
