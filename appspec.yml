@@ -4,8 +4,6 @@ files:
   - source: /publish
     destination: C:/aws-ci-cd-101    
 hooks:
-  ApplicationStop:
-    - location: scripts/ApplicationStop.ps1
   BeforeInstall:
     - location: scripts/BeforeInstall.ps1
   AfterInstall:
